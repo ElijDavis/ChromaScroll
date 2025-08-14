@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/ElijDavis/ChromaScroll/issues"
   },
-  "homepage": "https://github.com/ElijDavis/ChromaScroll#readme"
+  "homepage": "https://github.com/ElijDavis/ChromaScroll#readme",
+  "devDependencies": {
+    "react": "^19.1.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  }
 }
