@@ -1,30 +1,32 @@
 {
-  "name": "chromascroll",
+  "name": "chroma-dots",
   "version": "1.0.0",
-  "description": "Custom scroll bar for React development",
-  "main": "index.js",
+  "main": "dist/chroma-dots.umd.js",
+  "module": "dist/chroma-dots.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "release": "standard-version",
+    "prepublishOnly": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ElijDavis/ChromaScroll.git"
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/ElijDavis/ChromaScroll/issues"
-  },
-  "homepage": "https://github.com/ElijDavis/ChromaScroll#readme",
   "devDependencies": {
-    "react": "^19.1.1",
-    "standard-version": "^9.5.0",
-    "typescript": "^5.9.2",
-    "vite": "^6.3.5"
-  },
-  "dependencies": {
-    "tailwind": "^4.0.0"
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^3.0.0",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0",
+    "standard-version": "^9.0.0",
+    "tailwindcss": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.0.0"
   }
 }

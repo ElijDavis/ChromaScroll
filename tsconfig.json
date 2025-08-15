@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",                // use the new JSX transform 
+    "jsxImportSource": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,              // skip type-checking of deps
+    "strict": true,                    // turns on noImplicitAny
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,             // you’ll have to type every “any”
+    "types": ["node", "react", "react-dom"]    // explicitly include these
+  },
+  "include": ["src", "vite.config.ts", "demo/src/main.tsx", "demo/src/App.tsx"]
+}
